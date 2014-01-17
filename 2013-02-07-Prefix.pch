@@ -1,0 +1,26 @@
+//
+// Prefix header for all source files of the '2013-02-07' target in the '2013-02-07' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <QuartzCore/QuartzCore.h>
+#endif
+
+
+#define _base_url @"http://catholic.cokepa.com"
+#define IMAGE(id) [NSString stringWithFormat:@"%@/gridfs/%@", _base_url, id]
+
+#define Milk [UIColor colorWithRed:238.0/255.0 green:238.0/255.0 blue:238.0/255.0 alpha:1.0]
+#define LightSkyBlue [UIColor colorWithRed:135.0/255.0 green:206.0/255.0 blue:250.0/255.0 alpha:.5]
+#define SkyBlue [UIColor colorWithRed:135.0/255.0 green:206.0/255.0 blue:235.0/255.0 alpha:.5]
+#define DeepSkyBlue [UIColor colorWithRed:0.0/255.0 green:191.0/255.0 blue:255.0/255.0 alpha:.5]
+
+#define ROOT_VIEW_CONTROLLER ((AppDelegate *)[UIApplication sharedApplication].delegate).window.rootViewController
